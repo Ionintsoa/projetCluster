@@ -1,3 +1,4 @@
 <?php 
-	echo "Test projet clustering";
+	require('fonctions.php');
+	insertEnBoucle(300);
 ?>
