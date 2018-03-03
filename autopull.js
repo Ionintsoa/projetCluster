@@ -10,15 +10,15 @@ app.get('/', function(req, res) {
       path: '/',
       agent: false  // create a new agent just for this one request
     }, (result) => {
-      console.log("Ndana amizay jereo le an'i iony eh");
+      console.log("Ndana amizay jereo le an'i iony linux eh");
     });
     http.get({
-      hostname: '192.168.8.106',
+      hostname: '192.168.8.104',
       port: 1337,
       path: '/',
       agent: false  // create a new agent just for this one request
     }, (result) => {
-      console.log("Ndana amizay jereo le an'i cedy eh");
+      console.log("Ndana amizay jereo le an'i iony windows eh");
     });
 });
 
