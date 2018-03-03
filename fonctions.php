@@ -2,7 +2,7 @@
 	header('Content-Type: text/html; charset=UTF-8'); 
 	function dbconnect(){
 		//echo '--------------------------------------------------------Dans dbConnect-------------------------------------------------------';
-		$PARAM_hote='192.168.1.102'; // le chemin vers le serveur
+		$PARAM_hote='192.168.8.104'; // le chemin vers le serveur
 		$PARAM_port='3306';
 		$PARAM_nom_bd='projetCluster'; // le nom de votre base de données
 		$PARAM_utilisateur='cluster'; // nom d'utilisateur pour se connecter
