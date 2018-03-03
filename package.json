@@ -1,0 +1,23 @@
+{
+  "name": "projetcluster",
+  "version": "1.0.0",
+  "description": "mist git-auto-pull",
+  "main": "index.js",
+  "dependencies": {
+    "git-auto-pull": "^1.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ionintsoa/projetCluster.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ionintsoa/projetCluster/issues"
+  },
+  "homepage": "https://github.com/Ionintsoa/projetCluster#readme"
+}
