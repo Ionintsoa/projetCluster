@@ -9,8 +9,16 @@ app.get('/', function(req, res) {
       port: 1337,
       path: '/',
       agent: false  // create a new agent just for this one request
-    }, (res) => {
-      console.log("Ndana amizay jereo eh");
+    }, (result) => {
+      console.log("Ndana amizay jereo le an'i iony eh");
+    });
+    http.get({
+      hostname: '192.168.8.106',
+      port: 1337,
+      path: '/',
+      agent: false  // create a new agent just for this one request
+    }, (result) => {
+      console.log("Ndana amizay jereo le an'i cedy eh");
     });
 });
 
