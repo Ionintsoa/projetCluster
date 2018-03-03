@@ -17,7 +17,7 @@
 		for($compteur=0;$compteur<$nombre;$compteur++){
 			$nom = "Nom".$compteur;
 			$prenom = "Prenom".$compteur;
-			$description = "Ceci est sensé être la description de la personne, mon travail est de faire en sorte que la valeur de ce champ soit le plus long possible, j''vous raconte pas comment je galère à trouver ce que je dois écrire dessus, donnez moi de l''inspiration je ne sais pas quoi écrire.... Ce description appartient à l''élément numero ".$compteur." de la boucle. Aller j''arrête maintenant c''est ridicule";
+			$description = "Ceci est sensé être la description de la personne, mon travail est de faire en sorte que la valeur de ce champ soit le plus long possible. Ce description appartient à l''élément numero ".$compteur." de la boucle.";
 			date_default_timezone_set ('Africa/Nairobi');
 			$dateNaissance = date('d-m-Y', strtotime($today.' + 1 DAY'));
 			insertSolo($connection,$nom,$prenom,$description,$dateNaissance,$compteur);
