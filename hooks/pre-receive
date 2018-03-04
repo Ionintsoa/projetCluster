@@ -1,1 +1,3 @@
-curl 192.168.8.107:1337
+#!/bin/sh
+# mail out commit update information.
+echo "post-receive"
