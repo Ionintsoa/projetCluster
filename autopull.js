@@ -12,22 +12,22 @@ app.get('/', function(req, res) {
     }, (result) => {
       console.log("Ndana amizay jereo le an'i cedy eh");
     });
-    http.get({
-      hostname: '192.168.1.103',
-      port: 1337,
-      path: '/',
-      agent: false  // create a new agent just for this one request
-    }, (result) => {
-      console.log("Ndana amizay jereo le an'i iony linux eh");
-    });
-    /*http.get({
-      hostname: '192.168.1.137',
-      port: 1337,
-      path: '/',
-      agent: false  // create a new agent just for this one request
-    }, (result) => {
-      console.log("Ndana amizay jereo le an'i mendrika eh");
-    });
+    // http.get({
+    //   hostname: '192.168.1.103',
+    //   port: 1337,
+    //   path: '/',
+    //   agent: false  // create a new agent just for this one request
+    // }, (result) => {
+    //   console.log("Ndana amizay jereo le an'i iony linux eh");
+    // });
+    // http.get({
+    //   hostname: '192.168.1.137',
+    //   port: 1337,
+    //   path: '/',
+    //   agent: false  // create a new agent just for this one request
+    // }, (result) => {
+    //   console.log("Ndana amizay jereo le an'i mendrika eh");
+    // });
     http.get({
       hostname: '192.168.1.146',
       port: 1337,
@@ -35,7 +35,7 @@ app.get('/', function(req, res) {
       agent: false  // create a new agent just for this one request
     }, (result) => {
       console.log("Ndana amizay jereo le an'i mirado eh");
-    });*/
+    });
 });
 
 
