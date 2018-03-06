@@ -1,0 +1,4 @@
+#!/bin/sh
+# mail out commit update information.
+echo "post-update"
+curl localhost:3000
