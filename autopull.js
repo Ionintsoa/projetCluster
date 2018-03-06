@@ -5,21 +5,37 @@ var app = express();
 app.get('/', function(req, res) {
     res.setHeader('Access-Control-Allow-Origin', '*');
     http.get({
-      hostname: '192.168.8.107',
+      hostname: '192.168.1.145',
+      port: 1337,
+      path: '/',
+      agent: false  // create a new agent just for this one request
+    }, (result) => {
+      console.log("Ndana amizay jereo le an'i cedy eh");
+    });
+    http.get({
+      hostname: '192.168.1.103',
       port: 1337,
       path: '/',
       agent: false  // create a new agent just for this one request
     }, (result) => {
       console.log("Ndana amizay jereo le an'i iony linux eh");
     });
-    http.get({
-      hostname: '192.168.8.104',
+    /*http.get({
+      hostname: '192.168.1.137',
       port: 1337,
       path: '/',
       agent: false  // create a new agent just for this one request
     }, (result) => {
-      console.log("Ndana amizay jereo le an'i iony windows eh");
+      console.log("Ndana amizay jereo le an'i mendrika eh");
     });
+    http.get({
+      hostname: '192.168.1.146',
+      port: 1337,
+      path: '/',
+      agent: false  // create a new agent just for this one request
+    }, (result) => {
+      console.log("Ndana amizay jereo le an'i mirado eh");
+    });*/
 });
 
 
