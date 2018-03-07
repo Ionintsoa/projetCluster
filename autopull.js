@@ -5,12 +5,12 @@ var app = express();
 app.get('/', function(req, res) {
     res.setHeader('Access-Control-Allow-Origin', '*');
     http.get({
-      hostname: '192.168.1.145',
+      hostname: '192.168.88.91',
       port: 1337,
       path: '/',
       agent: false  // create a new agent just for this one request
     }, (result) => {
-      console.log("Ndana amizay jereo le an'i cedy eh");
+      console.log("Ndana amizay jereo le an'i mendrika eh");
     });
     // http.get({
     //   hostname: '192.168.1.103',
@@ -20,22 +20,22 @@ app.get('/', function(req, res) {
     // }, (result) => {
     //   console.log("Ndana amizay jereo le an'i iony linux eh");
     // });
-    http.get({
-      hostname: '192.168.1.137',
-      port: 1337,
-      path: '/',
-      agent: false  // create a new agent just for this one request
-    }, (result) => {
-      console.log("Ndana amizay jereo le an'i mendrika eh");
-    });
-    http.get({
-      hostname: '192.168.1.146',
-      port: 1337,
-      path: '/',
-      agent: false  // create a new agent just for this one request
-    }, (result) => {
-      console.log("Ndana amizay jereo le an'i mirado eh");
-    });
+    // http.get({
+    //   hostname: '192.168.1.137',
+    //   port: 1337,
+    //   path: '/',
+    //   agent: false  // create a new agent just for this one request
+    // }, (result) => {
+    //   console.log("Ndana amizay jereo le an'i mendrika eh");
+    // });
+    // http.get({
+    //   hostname: '192.168.1.146',
+    //   port: 1337,
+    //   path: '/',
+    //   agent: false  // create a new agent just for this one request
+    // }, (result) => {
+    //   console.log("Ndana amizay jereo le an'i mirado eh");
+    // });
 });
 
 
